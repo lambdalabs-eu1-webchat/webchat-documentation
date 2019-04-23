@@ -37,12 +37,12 @@ What problems does this solution solve for this specific project?
 
 - Quickly deliver messages to users.</br>
   Since mongoDB has a fast read and write speed it should allow for live messages to get delivered to the users quickly. This is partly because MongoDB does INSERT and UPDATE Asynchronous (eventual consistency).
-- Allow for rapid scalability</br>
+- Allow for rapid scalability.</br>
   MongoDB offers auto sharding which allows for the database to grow horizontally over many servers rather then growing vertically. This is advantageous because horizontal growth is cheaper then vertical growth
 
 What are the drawbacks of using this solution over alternatives?
 
-- MongoDB is not as reliable as a traditional SQL DB</br>
+- MongoDB is not as reliable as a traditional SQL DB.</br>
   MongoDB inserts and updates data asynchronously. This means that there is no return value for a successful insert or update. This allows for a faster insert or update but results in no confirmation that the operation was successful. Since speed is more important than reliability this is an acceptable trade off.
 - No capabilities of a relational database.This means no joins.</br>
   Since a NOSQL DB is being used it will have to be designed in a way that makes sense for the technology. In some cases it could be seen as a positive that there are no joins.
