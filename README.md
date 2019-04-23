@@ -399,12 +399,27 @@ redux
 
 
 ## Back End
-**What technology solution will you use for your back-end?**   
-**What problems does this solution solve for this specific project?**   
+**What technology solution will you use for your back-end?**
+
+We will use Node.js and it's Express framework to build the server and APIs. For the chat app, we will use Socket.IO.
+
+**What problems does this solution solve for this specific project?**
+
+- [**Node.js**](https://nodejs.org/en/) is a JavaScript runtime build on Chrome's V8 engine. Being an interface to the V8 JavaScript runtime, it enables super fast JavaScript interpreter that runs in the Chrome browser. Its non-blocking I/O model is ideal for real-time applications, like chats, even tho it is single threaded. Event loop takes care of all the asynchronous I/O operations without blocking synchronous tasks. That means actions like reading or writing to the database, or network requests can be performed very quickly and not block the process.
+
+- [**Express.js**](https://expressjs.com/) is a flexible Node.js framework that provides robust set of features for web and mobile applications. The pleathora of HTTP utility methods and middleware available allows us to quickly create robust API. 
+
+- [**Socket.IO**](https://socket.io/docs/) is a library, that enables real-time bidirectional communication between the server and the browser. This means that the server can push messages to clients. Whenever you write a chat message, the idea is that the server will get it and push it to all other connected clients. The benefits of using Socket.IO instead of vanilla WebSockets are:
+  - It supports fallback options
+  - It supports broadcasting
+  - Connection can be established in presence of proxies and load balancers
+
+
+
 **What are the drawbacks of using this solution over alternatives?**   
-Node
-express
-Socket io over just websockets
+- Everything runs on JavaScript
+
+
 
 
 ## Deployment
