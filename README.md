@@ -18,12 +18,12 @@ React gives us complete flexibility over which other libraries we may want to in
 
 ### Database
 
-(refer to stand alone tech docs for diagrams)
 What technology solution will you use for your database?
 
 One of the main considerations for picking a database was to either choice a SQL or NOSQL database. Since our app involves real-time chat the number one consideration data wise for our app is read and write speed. Another key aspect that was decided on was scalability. Referring to the below table and thinking about the mentioned requirements for the database it was decided that a NOSQL technology would be selected.
 
 ![table comparing relational to NOSQL databases](images/relationalvsNOSQL.PNG)
+</br>
 Carla Andres table comparing relational to NOSQL databases
 
 From reviewing a number of different NOSQL databases mongoDB was selected for these reasons :
@@ -35,14 +35,14 @@ From reviewing a number of different NOSQL databases mongoDB was selected for th
 
 What problems does this solution solve for this specific project?
 
-- Quickly deliver messages to users.
+- Quickly deliver messages to users.</br>
   Since mongoDB has a fast read and write speed it should allow for live messages to get delivered to the users quickly. This is partly because MongoDB does INSERT and UPDATE Asynchronous (eventual consistency).
-- Allow for rapid scalability
+- Allow for rapid scalability</br>
   MongoDB offers auto sharding which allows for the database to grow horizontally over many servers rather then growing vertically. This is advantageous because horizontal growth is cheaper then vertical growth
 
 What are the drawbacks of using this solution over alternatives?
 
-- MongoDB is not as reliable as a traditional SQL DB
+- MongoDB is not as reliable as a traditional SQL DB</br>
   MongoDB inserts and updates data asynchronously. This means that there is no return value for a successful insert or update. This allows for a faster insert or update but results in no confirmation that the operation was successful. Since speed is more important than reliability this is an acceptable trade off.
-- No capabilities of a relational database.This means no joins.
+- No capabilities of a relational database.This means no joins.</br>
   Since a NOSQL DB is being used it will have to be designed in a way that makes sense for the technology. In some cases it could be seen as a positive that there are no joins.
