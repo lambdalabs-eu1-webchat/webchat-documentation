@@ -152,7 +152,7 @@ A new customer finds the Co for the first time and has a quick question to furth
 **Feature Name:**
 
 - **\*User access:** \*\*  
-  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that****\_****  
+  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
   **What internal APIs will you build to implement this feature?**  
   **Are there third party services, APIs, or platforms will you use to implement this feature?**  
   **Have you considered using native frameworks?**  
@@ -212,7 +212,7 @@ Button for sending message
 Div for chat bubbles
 Img for picture of agent
 Headers for Agent name and for agent motto
-  
+
 **Are there third party services, APIs, or platforms will you use to implement this view?**  
 APIs
 Connect to chat
@@ -422,7 +422,7 @@ We will use Node.js and it's Express framework to build the server and APIs. For
 Heroku/Zeit-Now/Netlify/Firebase
 Cost estimate when running at scale
 
-### Database
+## Database
 
 What technology solution will you use for your database?
 
