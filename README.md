@@ -253,11 +253,11 @@ Handle state of chats
 **Feature Name:** Rate the service
 
 - **User access:** Guest, Admin
-- **User Story:** As a Guest I want to be able to leave rating on how my request was fullfileld, so that I can give a task specific feedback
-
-- **User Story:** As an Admin I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review. 
-  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
-  **What internal APIs will you build to implement this feature?**  
+- **User Story:** As a Guest I want to be able to leave rating on how my request was fullfileld, so that I can give a task specific feedback.
+- **User Story:** As an Admin I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review.
+  **What internal APIs will you build to implement this feature?**
+  - [POST] feedback
+  
   **Are there third party services, APIs, or platforms will you use to implement this feature?**  
   **Have you considered using native frameworks?**  
   **What are the costs and benefits of using the third party solution?**
@@ -586,9 +586,9 @@ Front-end: Netlify
 Back-end: Heroku
 
 
-###Heroku
+### Heroku
 **What problems does this solution solve for this specific project?**
-#####Heroku
+##### Heroku
   -	Quick and easy deployment - Ideal for agencies wishing to focus on product development and quickly delivering an application, but not wanting to deal with the overhead of managing systems 
   -	Has a low learning curve
   -	Excellent error logs. When a deployment fails in Heroku, it sends a standard error log, making debugging and deployment relatively painless.
@@ -599,7 +599,7 @@ Back-end: Heroku
   - It is the cheapest option for a low traffic site.
   - Automatic deployment easily set up from GitHub
   
-#####Netlify
+##### Netlify
   - Extremely easy to use
   - Ideal for front end deployments
   - Allows for easy deployment to production with automated deployments from GitHub
