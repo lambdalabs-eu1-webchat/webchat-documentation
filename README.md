@@ -415,8 +415,13 @@ We will use Node.js and it's Express framework to build the server and APIs. For
 
 **What technology solution will you use to deploy your front-end and back-end?**
 
+Front-end: Netlify
+Back-end: Heroku
+
+
 ###Heroku
 **What problems does this solution solve for this specific project?**
+#####Heroku
   -	Quick and easy deployment - Ideal for agencies wishing to focus on product development and quickly delivering an application, but not wanting to deal with the overhead of managing systems 
   -	Has a low learning curve
   -	Excellent error logs. When a deployment fails in Heroku, it sends a standard error log, making debugging and deployment relatively painless.
@@ -426,62 +431,17 @@ We will use Node.js and it's Express framework to build the server and APIs. For
   - Offers great documentation
   - It is the cheapest option for a low traffic site.
   - Automatic deployment easily set up from GitHub
+  
+#####Netlify
+  - Extremely easy to use
+  - Ideal for front end deployments
+  - Allows for easy deployment to production with automated deployments from GitHub
 
 **What are the drawbacks of using this solution over alternatives?**
   -	Can quickly become expensive – A growing infrastructure may require may trigger a premium payment. Also, scaling an application is manual, meaning that it requires an increase in the amount of dynos that need to be purchased. – It can be as much as 3x-5x more expensive than a comparable setup through Iaas. The addons can also become very expensive.
   -	Limited configuration – Heroku makes it easy to quickly deploy an application but that comes at the expense of having any control over the exact configuration of an application. 
   -	On the free tier, applications are generally put to sleep after a period of inactivity in order to free system resources and will only get back up once the app received a web request. This can generally take up to 10-15 seconds.
   -	Although the initial setup is quick and easy, growing applications can be very slow to deploy after the first few deployments as the dynos require a longer time to restart.
-
-###AWS
-**What problems does this solution solve for this specific project?**
-
-  -	It is considered an industry standard meaning you’ll be able to find people who know it.
-  - Benefits massively from economies of scale which allow it to be more cost efficient than pretty much any other current cloud provider and it will likely remain that way for at least the near term.
-  - Allows for a lot of control over infrastructure (i.e. such as software versions, specific patches, etc.) and how you want to scale it and how you want to organize your architecture in different components.
-
-
-**What are the drawbacks of using this solution over alternatives?**
-  - It has a really high learning curve. 
-  - Choosing the most cost effective architecture requires a lot of expertise
-
-###Zeit-Now   
-**What problems does this solution solve for this specific project?**
-  - Easy deployments via CLI and calling ‘now’ inside the root of the project to automatically build a project and automatic deployments from GitHub
-  - Has in-depth documentation
-  - Allows for frontend, assets and APIs to be stored in one place. 
-  - Instead of deploying a large server, it allows for deployment of lots of small functions that look and act as one.
-  - When deployments are not active receiving traffic, no additional charges incur.
-  - Serverless – builds are paid fully on demand and based on time spent on execution, no time spent in queues.
-  - Has a nice interface for accessing logs and viewing source code.
-
-**What are the drawbacks of using this solution over alternatives?**
-  - Handled workloads are either static or stateless.
-  - Unlike any other cloud competitors, deployments are immutable and any new source or config change creates a new deployment. 
-  - No option to manage what gets deployed. Running the command ‘now’ will zip the current directory and deploy, meaning that it can pick up assets you may not want live.
-  - Limited add-ons
-
-###Netlify
-**What problems does this solution solve for this specific project?**
-  - Extremely easy to use
-  - Ideal for front end deployments
-  - Allows for easy deployment to production with automated deployments from GitHub
-
-**What are the drawbacks of using this solution over alternatives?**
-  - Couldn’t find any based on the scale of the product
-
-###Firebase
-**What problems does this solution solve for this specific project?**
-  - Unique optimization for serving single-page web apps and static websites. 
-  - All sites hosted by Firebase also get a free SSL certificate, so content is always delivered securely.
-  - Offers an automated continuous deployment workflow for both static and dynamic content with partner Cloud Build.
-  - Can build custom express middleware to restrict access and build additional security layers.
-  - Can build deep integrations with other Firebase services such as Cloud Functions,Authentication, Realtime Database, Cloud Firestore, and Cloud Messaging.
-
-**What are the drawbacks of using this solution over alternatives?**
-  - Limited scalability
-  - Can become expensive
-
 
 ## Database
 
