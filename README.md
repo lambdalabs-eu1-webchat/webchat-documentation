@@ -2,97 +2,76 @@
 
 ## Idea
 
-When customers click on those chatbot apps they want to get a quick answer. Webchat allows your customers to add some basic information so that you know who they are and you can reach out to them. Webchat lets you keep track and assign conversations so that the conversation doesn’t get lost. Most importantly, Webchat is mobile ready so that users can ask questions and respond on their phones.
+When guests stay at hotels, they often need to communicate with hotel staff. Whether it's room service, restaurant recommendations, or noise complaints, they can use WebChat to readily talk with hotel staff and get their issues resolved. WebChat allows hotels to manage all of their customers issues in one place, allowing effective triaging across staff and ensurance that no customer need is left unresolved.
 
 ### Mission statement:
 
-Provide businesses with a streamlined workflow for managing and handling support requests, and provide their customers with a personable and conversational support experience.
+Provide hotels with a streamlined workflow for managing and handling guest requests, and provide guests with a frictionless service experience.
 
 ## User Journey
 
-Caitlyn is the head of client success for a small company in Baltimore. They have clients all over the world visit their website. For years support requests have been sent via an email address. And then they get added to a ticketing system. Customers are given “support ticket number”. She hates it. Customers hate it. It doesn’t feel like a wonderful brand experience. She wants customers to feel like they have a direct line and an open conversation. Thanks to WebChat when a customer asks a question they get added to a shared queue with all of the client success reps. In the Webchat interface reps can have a live chat conversation with customers. Customers have a better experience, and conversations are handled better.
+Luke is the hotel manager for a small-medium sized hotel in Warsaw. For years, guest queries have been dealt with at the reception desk or via the in-room telephones. Guests either have to make their way down to the hotel lobby or use the antiquated phone system. It's an inconvenience to guests. Many prefer not to make smaller requests, such as ordering bottles of water, over the phone, and in some cases don't make the requests at all as a result. This causes sub-par guest experiences and costs the hotel revenue in the process. Luke wants guests to feel like they have a direct line and an open conversation with hotel staff. In the Webchat interface, receptionists and other hotel staff can have a live chat conversations with guests to resolve their issues/requests.
+Luke has another problem. His hotel has received several bad reviews related to customer service and he needs to track down the source of the hotels shortcomings. With WebChat, guests are asked to leave feedback after every request is resolved, giving him a detailed view of how well his staff are supporting guests. 
 
-Gabe is a client success rep. He used to have a number of tools to manage messaging customers. He would switch from email to task manager and other collaboration tools. It was hard to make sure everyone knew who had responded to which customer and he was always worried he would make a mistake and risk his job. Thanks to Webchat Gabe and the other client success reps have a feed of open and closed conversations and they can easily go in and participate in live conversations with customers and close them when they are done. Customers love it and Gabe loves it.
+Gabe is a receptionist. He used to deal with customer queries either in-person or via a phone. Dealing with multiple queries at a time was difficult and oftentimes lead to long queues at reception and unanswered phone calls. It was hard to make sure every guest had been dealt with between the reception team and he was always worried he would make a mistake and risk his job. Thanks to WebChat, Gabe and his fellow receptionists have a feed of open and closed conversations and they can easily participate in live conversations with guests and close them when they are done. Customers love it and Gabe loves it.
 
 ## Solutions
 
 ### Features for MVP:
 
-- On check-in a guest is given a unique code (linked to room number) that the guest uses to login.
-- A guest uses unique code on a login page to get to room specific chat app
-- A guest can see a thread of chat with the hotel staff for this stay at the hotel
-- An admin can add or remove “hotel staff” members
-- Receptionist can check in and check out a hotel guest
-- Receptionist can chat to guests
-- Receptionist and admin can log in to see pending conversations
-- Receptionist can add responses to conversations or mark them as closed
-- A 5 star rating with optional message is asked for from guest at the end of each chat
+- Guests can scan a QR code that takes them to the chat application where they can talk with hotel staff.
+- A guest can see a thread of the conversations that took place during their stay.
+- App Owners and admins can add and remove receptionists.
+- Receptionists can check in and check out a hotel Guest with a temporary login that will work during the course of their stay.
+- Receptionists and Admins can log in to see pending conversations, chat to guests, and mark conversations as resolved.
+- Guests can give a 5 star rating with an optional message at the end of each chat. 
 
 ### Features for future releases:
 
-- Date and time tag for groups of messages in a chat log.
-- User’s get feedback when other user is typing
-- a receptionist can assign tasks to staff members
-- staff members can mark tasks as completed
-- Metrics on admin dashboards that show a breakdown of receptionists performance across KPIs such as average guest rating, (Possibly show a leaderboard to receptionist, a away to see low scored chats or unresolved chats and gamify?).
-- Watch the chat for harsh chats and ping admin that it is going on.
-- Responses are sent to the guest via email with a link back to the conversation.
-- Responses are sent via SMS with a link to the conversation.
-- a list of priority hotel rooms that marks certain guests as highly important.
+- Users (receptionists or guests) get feedback when the person they are talking to is typing
+- Receptionists have the ability to create tasks, assign them to staff members, and mark them as completed.
+- Admins can access a dashboard of metrics that indicate staff performance/shortcomings.
+- Admins are notified when dangerous/harmful keywords or negative sentiment is taking place in a conversation (https://dialogflow.com/).
+- An outline of a guests interactions with the hotel are sent via email or text (dependent on guest preferences) after their stay.
+- Priority hotel rooms/guest conversations are highlighted in the app for Admins and receptionists.
+- Conversations can be reassigned between Receptionists/Admins when they switch over shifts.
+- Admins/receptionists can talk to guests in English and messages will be received in the guests preferred language (https://cloud.google.com/translate/docs/). 
 
-### Features for future future releases:
-
-- Stretchy stretch stretch (if move towards bot idea) https://dialogflow.com/ NLP/Sentiment/Bot Automation
-- Stretchiest stretch stretch - chat in multiple languages - https://cloud.google.com/translate/docs/
+- QR for log in
 
 ## Why build this?
 
 ### What problem does this application solve?
 
-1. Businesses are looking for a streamlined workflow for managing and handling support requests:
-   1. receptionists previously had to work across multiple tools causing inefficiency in their response times
-   2. There was no means of tracking tickets meaning some customers queries could have gone on unresolved.
-2. Customers are looking for direct lines of conversation with minimal fuss:
-   1. The user experience was fragmented, submitting an email, receiving a ticket, and finally getting to support
-   2. There was no feel of engaging with a real member of the team and being able to converse naturally back and forth.
+1. Hotels are looking for a streamlined and efficient workflow for managing and handling guest requests:
+   - Receptionists previously had to talk to all guests over the phone or in-person meaning they could only talk to one guest at a time.
+   - Receptionists had no means of tracking guest requests meaning some queries could have gone on unresolved.
+2. Guests are looking for direct, frictionless, and convenient lines of conversation with minimal fuss:
+   - Guests felt like walking down to reception or making a phone call from their room to initiate a small request was too much overhead.
+   - Guests felt sometimes uncomfortable giving feedback face-to-face or over the phone.
+   - Guests previously had to be inside the hotel to speak with staff or receptionists, or otherwise would need to have the hotels phone number, pay premium rates for mobile plans abroad, and possibly have to go through an operator before reaching a member of staff.
 
 ### How does your application solve the problem?
 
-1.1 All conversations are in one place, as well as the ability to respond to customers.
-
-1.2 Each ticket is tracked with an ID, a status indication, a history of receptionists that have worked on it, and a history of all other tickets the customer is associated with.
-
-2.1 The user experience is bound to a chat window where customers either engage with receptionists.
-
-2.2 Live chat gives the customer a direct line of conversation.
+1. All guest conversations are in one place within a dashboard for receptionists and admins.
+2. Receptionists have the ability to respond to multiple guests at a time.
+3. Each guest query is linked to a guests stay/room, an indication of whether the request has been completed or not and a history of all the communication between that guest and the hotel.
+4. Guests can request help with minimal overhead, using a mobile-friendly chat application.
+5. Guests can access the app whether they're in their room or outside of the hotel. 
+6. Guests can give feedback regarding each of their requests without the awkwardness of delivering feedback in person.
 
 ## Key Features
 
 ### What is the “bread and butter” of your app? What makes your app yours?
 
-_Discuss as a team how long it will take to implement these features. Can you build it in the first 3 weeks? (Note: It is preferred to drop features and spend more time working on these key features.)_
-
-1. Live chat between receptionists and customers.
-2. Seamless integration with user’s websites and digital assets via a lightweight JS code snippet.
-3. End to end ticket tracking and handling.
-
-**Brainstorming** - how do we find an unique angle and no just build watered-down Intercom?
-
-- Customer support as a service for start-ups, pool of receptionists wrapped around a chat app that clients can easily add to their websites.
-- Specific industry where we can tailor specific needs e.g. taxis (possibly interview members from that industry to determine one or two twist features).
-- New-never-before-seen-features: video chats for B2B support.
-
-Potential challengers and time consumers
-
-- Creating a code snippet for integration with customer sites.
-- Using a no-SQL database for the first.
-- Using Socket.io.
+- The app is cloud based. There is no need for hotel guests to install any additional software.
+- Seamless integration for hotels. Just sign up, create your users, generate unique key for your guest and you can start resolving any queries they might have.
 
 ## Competitive Landscape
 
 ### Who are your competitors and how do they solve this problem? List at least three. Link to screenshots or samples features.
 
-Competitors are solving the customer support problem in a similar way (via chat applications and support dashboards) - the points of differentiation are generally around specific features:
+**There are mature, general-purpose chat applications, these aren't tailored towards hotels, but have an extensive range of features:**
 
 **Unite customer queries from all touch points (social, email, brand.coms)**  
 Zendesk, Intercom, Kayako  
@@ -111,6 +90,18 @@ Chatlio - integrates ticket support for teams that already use Slack.
 **Cater to different industries and client sizes**  
 Zendesk, Intercom - industry-specific features and pricing structures for different business sizes
 
+**There are native applications specifically focussed at the hotel industry - require user download:**
+RoomAssitant - live chat between guests and customers, as well as a host of other features that go beyond customer support and towards total hotel experience such as reservations and deals.
+https://roomassistant.com/
+
+Message Box - this application is either in development or has been left as a dormant project.
+https://getmymessage.co/
+
+**There are a smaller group of cloud-based chat applications specifically focussed on the hotel industry:**
+Mi-Room - allow guests to book services, notify the hotel of nutritional requirements etc. with a prebuilt set of options.
+https://www.mi-room.com/how-it-works/
+
+
 ### How many types of user accounts will you need for this project? For each user account type, answer the following:
 
 **Account Type:** App Owner  
@@ -118,31 +109,27 @@ Zendesk, Intercom - industry-specific features and pricing structures for differ
 **Needs:** Access to everything; create admin accounts, manage billing.
 
 **Account Type:** Admin  
-**Description:** Customer support team leads.  
-**Needs:** Complete overview of ticketing system, ability to assign and reassign tickets to receptionists, metrics on receptionist performance, ability to create receptionist accounts, (Admin has all of the same rights as an receptionist and can respond to tickets also as a requirement for smaller teams where admin and receptionist roles have overlap).
+**Description:** Hotel manager or senior staff members.  
+**Needs:** Complete overview of guest requests, metrics on service level/staff ratings, ability to create staff accounts.
 
-**Account Type:** receptionist  
-**Description:** Customer support worker.  
-**Needs:** Complete overview of ticketing system, respond and engage with tickets, close tickets, reassign a ticket that they’re working on (if expertise elsewhere is required).
+**Account Type:** Receptionist  
+**Description:** Hotel receptionist.  
+**Needs:** Complete overview of guest requests, respond and engage with guests, mark requests as resolved, generate unique codes for new guests.
 
-**Account Type:** Customer  
+**Account Type:** Guest  
 **Description:** End user.  
-**Needs:** Timely resolution to their queries.
+**Needs:** Access to the chat application during their stay, ability to view their conversation history for the stay.
 
 ## Monetization
 
 ### Which users would be willing to pay for your app?
-
-Larger businesses with more throughput - one admin and one receptionist for free, extra cost per receptionist or admin /month.
-.
+Larger businesses with more throughput - 5 staff members (admins or receptionists) for free, extra cost per account per month.
 
 ### What features can you charge for in your app?
-
-receptionist performance metrics dashboard on admin accounts, Slack integration
+Task management and ability to have general staff member accounts for completing tasks.
 
 ### Is there a possibility of a subscription model? Or a one time purchase?
-
-Monthly subscription for extra admins/receptionists.
+Monthly subscription for unlimited admins/receptionists with task management capabilities.
 
 ## Features
 
