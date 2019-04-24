@@ -11,7 +11,7 @@ Provide hotels with a streamlined workflow for managing and handling guest reque
 ## User Journey
 
 Luke is the hotel manager for a small-medium sized hotel in Warsaw. For years, guest queries have been dealt with at the reception desk or via the in-room telephones. Guests either have to make their way down to the hotel lobby or use the antiquated phone system. It's an inconvenience to guests. Many prefer not to make smaller requests, such as ordering bottles of water, over the phone, and in some cases don't make the requests at all as a result. This causes sub-par guest experiences and costs the hotel revenue in the process. Luke wants guests to feel like they have a direct line and an open conversation with hotel staff. In the Webchat interface, receptionists and other hotel staff can have a live chat conversations with guests to resolve their issues/requests.
-Luke has another problem. His hotel has received several bad reviews related to customer service and he needs to track down the source of the hotels shortcomings. With WebChat, guests are asked to leave feedback after every request is resolved, giving him a detailed view of how well his staff are supporting guests. 
+Luke has another problem. His hotel has received several bad reviews related to customer service and he needs to track down the source of the hotels shortcomings. With WebChat, guests are asked to leave feedback after every request is resolved, giving him a detailed view of how well his staff are supporting guests.
 
 Gabe is a receptionist. He used to deal with customer queries either in-person or via a phone. Dealing with multiple queries at a time was difficult and oftentimes lead to long queues at reception and unanswered phone calls. It was hard to make sure every guest had been dealt with between the reception team and he was always worried he would make a mistake and risk his job. Thanks to WebChat, Gabe and his fellow receptionists have a feed of open and closed conversations and they can easily participate in live conversations with guests and close them when they are done. Customers love it and Gabe loves it.
 
@@ -24,7 +24,7 @@ Gabe is a receptionist. He used to deal with customer queries either in-person o
 - App Owners and admins can add and remove receptionists.
 - Receptionists can check in and check out a hotel Guest with a temporary login that will work during the course of their stay.
 - Receptionists and Admins can log in to see pending conversations, chat to guests, and mark conversations as resolved.
-- Guests can give a 5 star rating with an optional message at the end of each chat. 
+- Guests can give a 5 star rating with an optional message at the end of each chat.
 
 ### Features for future releases:
 
@@ -35,7 +35,7 @@ Gabe is a receptionist. He used to deal with customer queries either in-person o
 - An outline of a guests interactions with the hotel are sent via email or text (dependent on guest preferences) after their stay.
 - Priority hotel rooms/guest conversations are highlighted in the app for Admins and receptionists.
 - Conversations can be reassigned between Receptionists/Admins when they switch over shifts.
-- Admins/receptionists can talk to guests in English and messages will be received in the guests preferred language (https://cloud.google.com/translate/docs/). 
+- Admins/receptionists can talk to guests in English and messages will be received in the guests preferred language (https://cloud.google.com/translate/docs/).
 
 - QR for log in
 
@@ -57,7 +57,7 @@ Gabe is a receptionist. He used to deal with customer queries either in-person o
 2. Receptionists have the ability to respond to multiple guests at a time.
 3. Each guest query is linked to a guests stay/room, an indication of whether the request has been completed or not and a history of all the communication between that guest and the hotel.
 4. Guests can request help with minimal overhead, using a mobile-friendly chat application.
-5. Guests can access the app whether they're in their room or outside of the hotel. 
+5. Guests can access the app whether they're in their room or outside of the hotel.
 6. Guests can give feedback regarding each of their requests without the awkwardness of delivering feedback in person.
 
 ## Key Features
@@ -101,7 +101,6 @@ https://getmymessage.co/
 Mi-Room - allow guests to book services, notify the hotel of nutritional requirements etc. with a prebuilt set of options.
 https://www.mi-room.com/how-it-works/
 
-
 ### How many types of user accounts will you need for this project? For each user account type, answer the following:
 
 **Account Type:** App Owner  
@@ -123,12 +122,15 @@ https://www.mi-room.com/how-it-works/
 ## Monetization
 
 ### Which users would be willing to pay for your app?
+
 Larger businesses with more throughput - 5 staff members (admins or receptionists) for free, extra cost per account per month.
 
 ### What features can you charge for in your app?
+
 Task management and ability to have general staff member accounts for completing tasks.
 
 ### Is there a possibility of a subscription model? Or a one time purchase?
+
 Monthly subscription for unlimited admins/receptionists with task management capabilities.
 
 ## Features
@@ -139,25 +141,21 @@ A new customer finds the Co for the first time and has a quick question to furth
 
 **Feature Name:**
 
-**User access:** 
+**User access:**
 **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
 **What internal APIs will you build to implement this feature?**  
 **Are there third party services, APIs, or platforms will you use to implement this feature?**  
 **Have you considered using native frameworks?**  
 **What are the costs and benefits of using the third party solution?**
 
-- Guests can scan a QR code that takes them to the chat application where they can talk with hotel staff.
-
-
 - Receptionists and Admins can log in to see pending conversations, chat to guests, and mark conversations as resolved.
-- Guests can give a 5 star rating with an optional message at the end of each chat. 
-
-
+- Guests can give a 5 star rating with an optional message at the end of each chat.
 
 **Feature Name:**
 Ability to generate unique guest login codes on check in and deactivate on check out
 
 - **User access:**
+
   - Receptionist
   - admin
   - super admin  
@@ -165,10 +163,10 @@ Ability to generate unique guest login codes on check in and deactivate on check
   - As a guest I want to not have to register for the app so that I can use it quickly
   - As a receptionist I want to quickly generate guest login codes so that I can quickly check in a guest
   - As a receptionist I want to be able to quickly edit the expiration date in case the guest decides to stay at our hotel for a longer period of time.
-  - As a receptionist I want to be able to quickly terminate the access for the  guest to the chat app on his check-out.
+  - As a receptionist I want to be able to quickly terminate the access for the guest to the chat app on his check-out.
 
     **What internal APIs will you build to implement this feature?**
-    A check guest in end point that returns a random unique code on successful check in. 
+    A check guest in end point that returns a random unique code on successful check in.
     [POST] create new code
     [PUT] edit expiration date (either to prolong it or let it expire)
     **Are there third party services, APIs, or platforms will you use to implement this feature?**  
@@ -180,7 +178,7 @@ ability to login
 
 - **User access:**  
   ALL  
-   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
+   **User Stories:**
 
   - As a guest I want to quickly login so that I can identify myself and use the features of the app.
   - As a receptionist I want to login so that I can identify and get access to receptionist secured features.
@@ -207,7 +205,7 @@ Live Chat
 
   - As a guest I want to live chat with receptionists so that I can get the help I need.
   - As a receptionist I want to live chat so that I can quickly help guests with what they need.
-  - As a Guest I want to be able to see my entire coversation history, which took place during my stay at the  hotel.
+  - As a Guest I want to be able to see my entire coversation history, which took place during my stay at the hotel.
   - As a Receptionist/Admin I wanto to be able to see the history of all conversations with each Guest for the duration of their stay at our hotel.
 
   **What internal APIs will you build to implement this feature?**
@@ -220,7 +218,6 @@ Live Chat
 
   **Have you considered using native frameworks?**  
    **What are the costs and benefits of using the third party solution?**
-
 
 **Feature Name:**  
 Handle state of chats
@@ -249,19 +246,17 @@ Handle state of chats
 
   - Ending a chat topic
 
-
 **Feature Name:** Rate the service
 
 - **User access:** Guest, Admin
 - **User Story:** As a Guest I want to be able to leave rating on how my request was fullfileld, so that I can give a task specific feedback
 
-- **User Story:** As an Admin I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review. 
+- **User Story:** As an Admin I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review.
   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
   **What internal APIs will you build to implement this feature?**  
   **Are there third party services, APIs, or platforms will you use to implement this feature?**  
   **Have you considered using native frameworks?**  
   **What are the costs and benefits of using the third party solution?**
-
 
 **Feature Name:**
 Admins and Super admins have the ability to add/remove Receptionist user type.
@@ -269,7 +264,7 @@ Admins and Super admins have the ability to add/remove Receptionist user type.
 **User access:** Admins, Super admins
 **User Stories:** As a Admin I want to be able to create new Receptionist user so that he can serve hotel guests.
 
-**User Stories:**  As a Admin I want to be able to remove Receptionist user so that I can change his role in the company.
+**User Stories:** As a Admin I want to be able to remove Receptionist user so that I can change his role in the company.
 
 **What internal APIs will you build to implement this feature?**
 [POST] new user type
@@ -280,19 +275,37 @@ No
 No
 **What are the costs and benefits of using the third party solution?**
 
+**Feature Name:**  
+Ability to scan a QR code to access guest login screen
 
+- **User access:**  
+  guest  
+   **User Stories:**
+
+  - As a guest I want to access the app without having to type in a URL.
+
+  **What internal APIs will you build to implement this feature?**
+  [GET] guest login page
+
+  **Are there third party services, APIs, or platforms will you use to implement this feature?**
+  qrcode
+
+  **Have you considered using native frameworks?**  
+  No
+
+  **What are the costs and benefits of using the third party solution?**
+  Don't have the time to make a QR generator and reader.
 
 **Feature Name:**
 
 - **\*User access:** \*\*  
   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
-    **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
+   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
   **What internal APIs will you build to implement this feature?**  
   **Are there third party services, APIs, or platforms will you use to implement this feature?**  
   **Have you considered using native frameworks?**  
   **What are the costs and benefits of using the third party solution?**
-
 
 ## Views
 
@@ -377,9 +390,9 @@ Tickets includes:
 - Navbar for active, queued and closed tickets subviews
 - Count of tickets
 - active, queued and closed subview all have
-- A list of cards  
-   - Each card has the guest's room number and preview of the most recent message in the chat. When the card is clicked it becomes the current chat.  
-  </br>
+- A list of cards
+  - Each card has the guest's room number and preview of the most recent message in the chat. When the card is clicked it becomes the current chat.  
+    </br>
 
 Current chat includes:
 
@@ -583,30 +596,32 @@ We will use Node.js and it's Express framework to build the server and APIs. For
 Front-end: Netlify
 Back-end: Heroku
 
-
 ###Heroku
 **What problems does this solution solve for this specific project?**
 #####Heroku
-  -	Quick and easy deployment - Ideal for agencies wishing to focus on product development and quickly delivering an application, but not wanting to deal with the overhead of managing systems 
-  -	Has a low learning curve
-  -	Excellent error logs. When a deployment fails in Heroku, it sends a standard error log, making debugging and deployment relatively painless.
-  -	Scaling is fairly straightforward – a growing number of processing units (dynos) can be easily purchased based on needs and can be quickly assigned to instances through the CLI or Heroku’s web UI.
-  - No lock-in when deciding to migrate to another service.
-  - Has built-in tools and architecture
-  - Offers great documentation
-  - It is the cheapest option for a low traffic site.
-  - Automatic deployment easily set up from GitHub
-  
+
+- Quick and easy deployment - Ideal for agencies wishing to focus on product development and quickly delivering an application, but not wanting to deal with the overhead of managing systems
+- Has a low learning curve
+- Excellent error logs. When a deployment fails in Heroku, it sends a standard error log, making debugging and deployment relatively painless.
+- Scaling is fairly straightforward – a growing number of processing units (dynos) can be easily purchased based on needs and can be quickly assigned to instances through the CLI or Heroku’s web UI.
+- No lock-in when deciding to migrate to another service.
+- Has built-in tools and architecture
+- Offers great documentation
+- It is the cheapest option for a low traffic site.
+- Automatic deployment easily set up from GitHub
+
 #####Netlify
-  - Extremely easy to use
-  - Ideal for front end deployments
-  - Allows for easy deployment to production with automated deployments from GitHub
+
+- Extremely easy to use
+- Ideal for front end deployments
+- Allows for easy deployment to production with automated deployments from GitHub
 
 **What are the drawbacks of using this solution over alternatives?**
-  -	Can quickly become expensive – A growing infrastructure may require may trigger a premium payment. Also, scaling an application is manual, meaning that it requires an increase in the amount of dynos that need to be purchased. – It can be as much as 3x-5x more expensive than a comparable setup through Iaas. The addons can also become very expensive.
-  -	Limited configuration – Heroku makes it easy to quickly deploy an application but that comes at the expense of having any control over the exact configuration of an application. 
-  -	On the free tier, applications are generally put to sleep after a period of inactivity in order to free system resources and will only get back up once the app received a web request. This can generally take up to 10-15 seconds.
-  -	Although the initial setup is quick and easy, growing applications can be very slow to deploy after the first few deployments as the dynos require a longer time to restart.
+
+- Can quickly become expensive – A growing infrastructure may require may trigger a premium payment. Also, scaling an application is manual, meaning that it requires an increase in the amount of dynos that need to be purchased. – It can be as much as 3x-5x more expensive than a comparable setup through Iaas. The addons can also become very expensive.
+- Limited configuration – Heroku makes it easy to quickly deploy an application but that comes at the expense of having any control over the exact configuration of an application.
+- On the free tier, applications are generally put to sleep after a period of inactivity in order to free system resources and will only get back up once the app received a web request. This can generally take up to 10-15 seconds.
+- Although the initial setup is quick and easy, growing applications can be very slow to deploy after the first few deployments as the dynos require a longer time to restart.
 
 ## Database
 
