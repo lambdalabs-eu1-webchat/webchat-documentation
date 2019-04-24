@@ -210,7 +210,7 @@ Ability to change the status of chats
   - Admin
   - Super Admin  
     **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
-  - As a receptionist I want to change the status of chats so that I keep track of which Guest qeueries are active and which have been resolved.
+  - As a Receptionist, I want to change the status of chats so that I keep track of which Guest qeueries are active and which have been resolved.
   **What internal APIs will you build to implement this feature?**
   [PUT] Chat status
   - Connect to chat endpoint
@@ -241,9 +241,9 @@ Ability to add/remove Receptionist user type.
   **User access:** 
   Admin, Super Admin
   **User Stories:** 
-  As a Super Admin/Admin, I want to be able to create new Receptionist user so that he can serve hotel guests.
+  As a Super Admin/Admin, I want to be able to create a new Receptionist user so that they can serve hotel guests.
   **User Stories:**  
-  As a Super Admin, I want to be able to remove Receptionist user so that I can change his role in the company.
+  As a Super Admin, I want to be able to remove a Receptionist if their role changes in the company.
   **What internal APIs will you build to implement this feature?**
   [POST] New user type
   [DELETE] User type  
