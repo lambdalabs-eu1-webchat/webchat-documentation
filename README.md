@@ -17,27 +17,25 @@ Gabe is a client success rep. He used to have a number of tools to manage messag
 ## Solutions
 
 ### Features for MVP:
-
-- A customer lands on a site specific to a business where they start a conversation with that business’ client success reps. They give personal info (name, email/phone number), and can login.
-- A customer can see a thread of responses and back and forth with a client success rep, and can re-authenticate to see previous conversations.
-- An admin can add or remove “support team” members
-- Agents can log in to see pending conversations
-
-* Agents can add responses to conversations or mark them as closed
-
-- Unauthorised customers that can ask quick questions without conversation tracking. Will still keep track of the convo
-  support staff can reassign tickets to different people depending on expertise/knowledge area. There will only be one agent per conversation at any given time.
-  Support staff 5 star rating with optional message
+- On check-in a guest is given a unique code (linked to room number) that the guest uses to login. 
+- A guest uses unique code on a login page to get to room specific chat app  
+- A guest can see a thread of chat with the hotel staff for this stay at the hotel
+- An admin can add or remove “hotel staff” members
+- Receptionist can check in and check out a hotel guest
+- Receptionist can chat to guests  
+- Receptionist and admin can log in to see pending conversations
+- Receptionist can add responses to conversations or mark them as closed
+- A 5 star rating with optional message is asked for from guest at the end of each chat 
 
 ### Features for future releases:
-
-- Metrics on admin dashboards that show a breakdown of agent performance across KPIs such as average customer rating, vol tickets handled. (Possibly show a leaderboard to agents and gamify?).
-- Responses are sent to the end user via email with a link back to the conversation.
-- Responses are sent via SMS with a link to the conversation.
-  a list of priority emails that marks certain users as highly important.
-- Support team receives tickets or updates on existing tickets via slack.
-  some option to make an intelligent bot then can use these frequently asked questions.
 - User’s get feedback when other user is typing
+- a receptionist can assign tasks to staff members
+- staff members can mark tasks as completed 
+- Metrics on admin dashboards that show a breakdown of receptionists performance across KPIs such as average guest rating, (Possibly show a leaderboard to receptionist, a away to see low scored chats or unresolved chats and gamify?).
+- Watch the chat for harsh chats and ping admin that it is going on.
+- Responses are sent to the guest via email with a link back to the conversation.
+- Responses are sent via SMS with a link to the conversation.
+- a list of priority hotel rooms that marks certain guests as highly important.
 
 ### Features for future future releases:
 
@@ -455,7 +453,7 @@ Carla Andres table comparing relational to NOSQL databases
 
 From reviewing a number of different NOSQL databases mongoDB was selected for these reasons :
 
-- Ease of scaling via automatic scaling ( Sharding)
+- Ease of scaling via automatic scaling (Sharding)
 - High performance
 - Secure from SQL injection
 - Supported by a large community (lots of resources)
