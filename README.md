@@ -148,12 +148,6 @@ A new customer finds the Co for the first time and has a quick question to furth
 
 - Guests can scan a QR code that takes them to the chat application where they can talk with hotel staff.
 
-
-- Receptionists and Admins can log in to see pending conversations, chat to guests, and mark conversations as resolved.
-- Guests can give a 5 star rating with an optional message at the end of each chat. 
-
-
-
 **Feature Name:**
 Ability to generate unique guest login codes on check in and deactivate on check out
 
@@ -162,11 +156,10 @@ Ability to generate unique guest login codes on check in and deactivate on check
   - admin
   - super admin  
     **2-3 User Stories:**
-  - As a guest I want to not have to register for the app so that I can use it quickly
-  - As a receptionist I want to quickly generate guest login codes so that I can quickly check in a guest
-  - As a receptionist I want to be able to quickly edit the expiration date in case the guest decides to stay at our hotel for a longer period of time.
-  - As a receptionist I want to be able to quickly terminate the access for the  guest to the chat app on his check-out.
-
+  - As a Guest, I want to not have to register for the app so that I can use it quickly
+  - As a Receptionist, I want to quickly generate guest login codes so that I can quickly check in a guest
+  - As a Receptionist, I want to be able to quickly edit the expiration date in case the guest decides to stay at our hotel for a longer period of time.
+  - As a Receptionist, I want to be able to quickly terminate the access for the  guest to the chat app on his check-out.
     **What internal APIs will you build to implement this feature?**
     A check guest in end point that returns a random unique code on successful check in. 
     [POST] create new code
@@ -176,26 +169,19 @@ Ability to generate unique guest login codes on check in and deactivate on check
     **What are the costs and benefits of using the third party solution?**
 
 **Feature Name:**
-ability to login
+Ability to login
 
 - **User access:**  
   ALL  
    **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
-
-  - As a guest I want to quickly login so that I can identify myself and use the features of the app.
-  - As a receptionist I want to login so that I can identify and get access to receptionist secured features.
-  - As a admin I want to login so that I can identify and get access to admin secure features.
-
+  - As a Guest, I want to quickly login so that I can identify myself and use the features of the app.
+  - As a Receptionist, I want to login so that I can identify and get access to receptionist secured features.
+  - As an Admin, I want to login so that I can identify and get access to admin secure features.
   **What internal APIs will you build to implement this feature?**
-
-  - Login endpoint
-
+  [POST] Login endpoint
   **Are there third party services, APIs, or platforms will you use to implement this feature?**
-
   - OAuth
-
   **Have you considered using native frameworks?**
-
   **What are the costs and benefits of using the third party solution?**
 
 **Feature Name:**  
@@ -203,95 +189,80 @@ Live Chat
 
 - **User access:**  
   ALL  
-   **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
-
-  - As a guest I want to live chat with receptionists so that I can get the help I need.
-  - As a receptionist I want to live chat so that I can quickly help guests with what they need.
-  - As a Guest I want to be able to see my entire coversation history, which took place during my stay at the  hotel.
-  - As a Receptionist/Admin I wanto to be able to see the history of all conversations with each Guest for the duration of their stay at our hotel.
-
+  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
+  - As a Guest, I want to live chat with receptionists so that I can get the help I need.
+  - As a Guest, I want to be able to see my entire coversation history, which took place during my stay at the hotel.
+  - As a Receptionist/Admin, I want to live chat so that I can quickly help guests with what they need.
+  - As a Receptionist/Admin I wan to to be able to see the history of all conversations with each Guest for the duration of their stay at our hotel.
   **What internal APIs will you build to implement this feature?**
-
-  - connect to chat endpoint
-
+  - Connect to chat endpoint
   **Are there third party services, APIs, or platforms will you use to implement this feature?**
-
   - Socket.io
-
-  **Have you considered using native frameworks?**  
-   **What are the costs and benefits of using the third party solution?**
-
-
-**Feature Name:**  
-Handle state of chats
-
-- **User access:**
-
-  - receptionist
-  - admin
-  - super admin  
-    **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
-  - As a guest I want to live chat with receptionists so that I can get the help I need.
-  - As a receptionist I want to change the state of chats so that I keep track.
-
-  **What internal APIs will you build to implement this feature?**
-
-  - connect to chat endpoint
-
-  **Are there third party services, APIs, or platforms will you use to implement this feature?**
-
-  - Socket.io
-
   **Have you considered using native frameworks?**  
   **What are the costs and benefits of using the third party solution?**
 
-  **Sub Features:**
 
-  - Ending a chat topic
+**Feature Name:**  
+Ability to change the status of chats
+
+- **User access:**
+  - Receptionist
+  - Admin
+  - Super Admin  
+    **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
+  - As a receptionist I want to change the status of chats so that I keep track of which Guest qeueries are active and which have been resolved.
+  **What internal APIs will you build to implement this feature?**
+  [PUT] Chat status
+  - Connect to chat endpoint
+  **Are there third party services, APIs, or platforms will you use to implement this feature?**
+  - Socket.io
+  **Have you considered using native frameworks?**  
+  **What are the costs and benefits of using the third party solution?**
 
 
 **Feature Name:** Rate the service
 
-- **User access:** Guest, Admin
-- **User Story:** As a Guest I want to be able to leave rating on how my request was fullfileld, so that I can give a task specific feedback.
-- **User Story:** As an Admin I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review.
+  - **User access:** 
+  Guest, Admin
+  - **User Story:** 
+  As a Guest, I want to be able to leave rating on how my request was fullfileld, so that I can give a task specific feedback.
+  - **User Story:** 
+  As an Admin, I want to be able to see how Hotel Guests are satisfied with my Hotel Staff, so that I can use it in their performance review.
   **What internal APIs will you build to implement this feature?**
-  - [POST] feedback
-  
+  [POST] Feedback
   **Are there third party services, APIs, or platforms will you use to implement this feature?**  
   **Have you considered using native frameworks?**  
   **What are the costs and benefits of using the third party solution?**
 
 
 **Feature Name:**
-Admins and Super admins have the ability to add/remove Receptionist user type.
+Ability to add/remove Receptionist user type.
 
-**User access:** Admins, Super admins
-**User Stories:** As a Admin I want to be able to create new Receptionist user so that he can serve hotel guests.
-
-**User Stories:**  As a Admin I want to be able to remove Receptionist user so that I can change his role in the company.
-
-**What internal APIs will you build to implement this feature?**
-[POST] new user type
-[DELETE] user type  
-**Are there third party services, APIs, or platforms will you use to implement this feature?**
-No
-**Have you considered using native frameworks?**
-No
-**What are the costs and benefits of using the third party solution?**
-
-
+  **User access:** 
+  Admin, Super Admin
+  **User Stories:** 
+  As a Super Admin/Admin, I want to be able to create new Receptionist user so that he can serve hotel guests.
+  **User Stories:**  
+  As a Super Admin, I want to be able to remove Receptionist user so that I can change his role in the company.
+  **What internal APIs will you build to implement this feature?**
+  [POST] New user type
+  [DELETE] User type  
+  **Are there third party services, APIs, or platforms will you use to implement this feature?**
+  **Have you considered using native frameworks?**
+  **What are the costs and benefits of using the third party solution?**
 
 **Feature Name:**
+Ability to scan a QR code to access guest login screen
 
-- **\*User access:** \*\*  
-  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
-    **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***
-  **2-3 User Stories:** As a **\_** I want to **\_\_\_** so that\***\*\_\*\***  
-  **What internal APIs will you build to implement this feature?**  
-  **Are there third party services, APIs, or platforms will you use to implement this feature?**  
-  **Have you considered using native frameworks?**  
-  **What are the costs and benefits of using the third party solution?**
+  **User access:**
+  Guest
+  **User Stories:**
+  - As a Guest, I want to access the app without having to type in a URL.
+  **What internal APIs will you build to implement this feature? [GET] guest login page**
+  **Are there third party services, APIs, or platforms will you use to implement this feature? qrcode**
+  **Have you considered using native frameworks?**
+  **What are the costs and benefits of using the third party solution? Don't have the time to make a QR generator and reader.**
+
 
 
 ## Views
