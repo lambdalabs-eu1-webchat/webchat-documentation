@@ -434,7 +434,7 @@ Carla Andres table comparing relational to NOSQL databases
 
 From reviewing a number of different NOSQL databases mongoDB was selected for these reasons :
 
-- Ease of scaling via automatic scaling ( Sharding)
+- Ease of scaling via automatic scaling (Sharding)
 - High performance
 - Secure from SQL injection
 - Supported by a large community (lots of resources)
