@@ -104,7 +104,7 @@ https://www.mi-room.com/how-it-works/
 
 ### How many types of user accounts will you need for this project? For each user account type, answer the following:
 
-**Account Type:** App Owner  
+**Account Type:** Super Admin 
 **Description:** Owner of the application.  
 **Needs:** Access to everything; create admin accounts, manage billing.
 
