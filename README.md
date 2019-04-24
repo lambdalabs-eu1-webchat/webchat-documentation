@@ -415,12 +415,33 @@ We will use Node.js and it's Express framework to build the server and APIs. For
 
 **What technology solution will you use to deploy your front-end and back-end?**
 
+Front-end: Netlify
+Back-end: Heroku
+
+
+###Heroku
 **What problems does this solution solve for this specific project?**
+#####Heroku
+  -	Quick and easy deployment - Ideal for agencies wishing to focus on product development and quickly delivering an application, but not wanting to deal with the overhead of managing systems 
+  -	Has a low learning curve
+  -	Excellent error logs. When a deployment fails in Heroku, it sends a standard error log, making debugging and deployment relatively painless.
+  -	Scaling is fairly straightforward – a growing number of processing units (dynos) can be easily purchased based on needs and can be quickly assigned to instances through the CLI or Heroku’s web UI.
+  - No lock-in when deciding to migrate to another service.
+  - Has built-in tools and architecture
+  - Offers great documentation
+  - It is the cheapest option for a low traffic site.
+  - Automatic deployment easily set up from GitHub
+  
+#####Netlify
+  - Extremely easy to use
+  - Ideal for front end deployments
+  - Allows for easy deployment to production with automated deployments from GitHub
 
 **What are the drawbacks of using this solution over alternatives?**
-
-Heroku/Zeit-Now/Netlify/Firebase
-Cost estimate when running at scale
+  -	Can quickly become expensive – A growing infrastructure may require may trigger a premium payment. Also, scaling an application is manual, meaning that it requires an increase in the amount of dynos that need to be purchased. – It can be as much as 3x-5x more expensive than a comparable setup through Iaas. The addons can also become very expensive.
+  -	Limited configuration – Heroku makes it easy to quickly deploy an application but that comes at the expense of having any control over the exact configuration of an application. 
+  -	On the free tier, applications are generally put to sleep after a period of inactivity in order to free system resources and will only get back up once the app received a web request. This can generally take up to 10-15 seconds.
+  -	Although the initial setup is quick and easy, growing applications can be very slow to deploy after the first few deployments as the dynos require a longer time to restart.
 
 ## Database
 
