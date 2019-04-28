@@ -1,5 +1,22 @@
 # WebChat
 
+## Table of Contents
+
+- [Idea](#idea)
+- [User Journey](#user-journey)
+- [Solutions](#solutions)
+- [Why build this?](#why-build-this-)
+- [Key Features](#key-features)
+- [Competitive Landscape](#competitive-landscape)
+- [Monetization](#monetization)
+- [Features](#features)
+- [Views](#views)
+- [Architectural Recommendations](#architectural-recommendations)
+- [APIs - Third Party Services](#apis---third-party-services)
+- [Outline and Weekly Plan](#outline-and-weekly-plan)
+- [Summary](#summary)
+- [References](#references)
+
 ## Idea
 
 When guests stay at hotels, they often need to communicate with hotel staff. Whether it's room service, restaurant recommendations, or noise complaints, they can use WebChat to readily talk with hotel staff and get their issues resolved. WebChat allows hotels to manage all of their guests issues in one place, allowing effective triaging across staff and assurance that no guest need is left unresolved.
@@ -486,23 +503,24 @@ React gives us complete flexibility over which other libraries we may want to in
 
 What library or framework will you be using for styling and presentation? (We highly recommend using a third-party component library - we will help pay for premium themes)
 
-## Material UI ##
- -As a team we decided to use material UI
+## Material UI
+
+-As a team we decided to use material UI
 
 **What problems does this solution solve for this specific project?**
 
-* We are going to have dynamic styles generated at runtime 
-* Incase we run into any design hiccup we can use the nested themes with intuitive overrides 
-* Since we only have a few weeks using material Ui will reduced load time with code splitting 
-* A wide range of helpful components are available, like app bars, auto complete, badges, buttons, cards, dialog boxes, icons, menus, sliders and more. 
-* Since we got an offer to get Premium themes,Material-UI also offers React themes and templates, so you can have a custom color theme for your app 
-* It wont use too much space so our web app can run quicker than  
+- We are going to have dynamic styles generated at runtime
+- Incase we run into any design hiccup we can use the nested themes with intuitive overrides
+- Since we only have a few weeks using material Ui will reduced load time with code splitting
+- A wide range of helpful components are available, like app bars, auto complete, badges, buttons, cards, dialog boxes, icons, menus, sliders and more.
+- Since we got an offer to get Premium themes,Material-UI also offers React themes and templates, so you can have a custom color theme for your app
+- It wont use too much space so our web app can run quicker than
 
 **What are the drawbacks of using this solution over alternatives?**
-    
-* Hard to customize so we might end up adding Materialize for css classnames 
-* We are limited to what we can customize 
-* We don't have social Icons so we will have to use Font Awesome for that  
+
+- Hard to customize so we might end up adding Materialize for css classnames
+- We are limited to what we can customize
+- We don't have social Icons so we will have to use Font Awesome for that
 
 ## Back End
 
