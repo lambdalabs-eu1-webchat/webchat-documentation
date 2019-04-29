@@ -1,4 +1,4 @@
-# WebChat
+# FrontDesk
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 ## Idea
 
-When guests stay at hotels, they often need to communicate with hotel staff. Whether it's room service, restaurant recommendations, or noise complaints, they can use WebChat to readily talk with hotel staff and get their issues resolved. WebChat allows hotels to manage all of their guests issues in one place, allowing effective triaging across staff and assurance that no guest need is left unresolved.
+When guests stay at hotels, they often need to communicate with hotel staff. Whether it's room service, restaurant recommendations, or noise complaints, they can use FrontDesk to readily talk with hotel staff and get their issues resolved. FrontDesk allows hotels to manage all of their guests issues in one place, allowing effective triaging across staff and assurance that no guest need is left unresolved.
 
 ### Mission statement:
 
@@ -27,10 +27,10 @@ Provide hotels with a streamlined workflow for managing and handling guest reque
 
 ## User Journey
 
-Luke is the hotel manager for a small-medium sized hotel in Warsaw. For years, guest queries have been dealt with at the reception desk or via the in-room telephones. Guests either have to make their way down to the hotel lobby or use the antiquated phone system. It's an inconvenience to guests. Many prefer not to make smaller requests, such as ordering bottles of water, over the phone, and in some cases don't make the requests at all as a result. This causes sub-par guest experiences and costs the hotel revenue in the process. Luke wants guests to feel like they have a direct line and an open conversation with hotel staff. In the Webchat interface, receptionists and other hotel staff can have live chat conversations with guests to resolve their issues/requests.
-Luke has another problem. His hotel has received several bad reviews related to guest service and he needs to track down the source of the hotels shortcomings. With WebChat, guests are asked to leave feedback after every request is resolved, giving him a detailed view of how well his staff are supporting guests.
+Luke is the hotel manager for a small-medium sized hotel in Warsaw. For years, guest queries have been dealt with at the reception desk or via the in-room telephones. Guests either have to make their way down to the hotel lobby or use the antiquated phone system. It's an inconvenience to guests. Many prefer not to make smaller requests, such as ordering bottles of water, over the phone, and in some cases don't make the requests at all as a result. This causes sub-par guest experiences and costs the hotel revenue in the process. Luke wants guests to feel like they have a direct line and an open conversation with hotel staff. In the FrontDesk interface, receptionists and other hotel staff can have live chat conversations with guests to resolve their issues/requests.
+Luke has another problem. His hotel has received several bad reviews related to guest service and he needs to track down the source of the hotels shortcomings. With FrontDesk, guests are asked to leave feedback after every request is resolved, giving him a detailed view of how well his staff are supporting guests.
 
-Gabe is a receptionist. He used to deal with guest queries either in-person or via a phone. Dealing with multiple queries at a time was difficult and oftentimes lead to long queues at reception and unanswered phone calls. It was hard to make sure every guest had been dealt with between the reception team and he was always worried he would make a mistake and risk his job. Thanks to WebChat, Gabe and his fellow receptionists have a feed of open and closed conversations and they can easily participate in live conversations with guests and close them when they are done. Guests love it and Gabe loves it.
+Gabe is a receptionist. He used to deal with guest queries either in-person or via a phone. Dealing with multiple queries at a time was difficult and oftentimes lead to long queues at reception and unanswered phone calls. It was hard to make sure every guest had been dealt with between the reception team and he was always worried he would make a mistake and risk his job. Thanks to FrontDesk, Gabe and his fellow receptionists have a feed of open and closed conversations and they can easily participate in live conversations with guests and close them when they are done. Guests love it and Gabe loves it.
 
 ## Solutions
 
@@ -497,7 +497,7 @@ React with Redux for global state management.
 
 This solution will allow us to render UI components dynamically with state changes, whilst also making asynchronous calls to the backend. React will give us flexibility to build a highly modular and, therefore reusable and testable, set of components. In this particular project, the solution allows us to display all of our linked views across the ticket support display, user acount details, and guest chat modal, whilst (1) readily updating the recorded conversation, the status of tickets, and their assignees, and (2) handling user authentication requests and their associated views.
 
-React gives us complete flexibility over which other libraries we may want to integrate within our application, when compared with framework solutions such as Angular and Vue. As a project that may in future look to deliver a native mobile solution that smaller guest service teams can use on the go (as in the case of webchat support competitors), React also offers the ability to re-use the bulk of our code base in a React Native setting. A potential drawback of using React over alternative options is that Vue is slightly more lightweight, requiring less memory and generally running faster when the same application is built on both technologies. Although it is possible to write React applications in Typescript, Angular's coupling with the Typescript language makes for a solution that most effectively covers type-checking and reduces room for such type errors that can occur in dynamically-typed Javascript. This downside can be somewhat limited by introducing prop-type checks across our React application.
+React gives us complete flexibility over which other libraries we may want to integrate within our application, when compared with framework solutions such as Angular and Vue. As a project that may in future look to deliver a native mobile solution that smaller guest service teams can use on the go (as in the case of FrontDesk support competitors), React also offers the ability to re-use the bulk of our code base in a React Native setting. A potential drawback of using React over alternative options is that Vue is slightly more lightweight, requiring less memory and generally running faster when the same application is built on both technologies. Although it is possible to write React applications in Typescript, Angular's coupling with the Typescript language makes for a solution that most effectively covers type-checking and reduces room for such type errors that can occur in dynamically-typed Javascript. This downside can be somewhat limited by introducing prop-type checks across our React application.
 
 ## Design Framework
 
