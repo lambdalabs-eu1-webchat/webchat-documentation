@@ -610,6 +610,10 @@ What are the drawbacks of using this solution over alternatives?
 - No capabilities of a relational database.This means no joins.</br>
   Since a NOSQL DB is being used it will have to be designed in a way that makes sense for the technology. In some cases it could be seen as a positive that there are no joins.
 
+![Diagram of MongoDB](images/db_diagram.PNG)
+</br>
+Diagram of database
+
 ## Model
 
 **What data do you need?**
