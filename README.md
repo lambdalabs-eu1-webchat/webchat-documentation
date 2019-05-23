@@ -503,24 +503,7 @@ React gives us complete flexibility over which other libraries we may want to in
 
 What library or framework will you be using for styling and presentation? (We highly recommend using a third-party component library - we will help pay for premium themes)
 
-## Material UI
-
--As a team we decided to use material UI
-
-**What problems does this solution solve for this specific project?**
-
-- We are going to have dynamic styles generated at runtime
-- Incase we run into any design hiccup we can use the nested themes with intuitive overrides
-- Since we only have a few weeks using material Ui will reduced load time with code splitting
-- A wide range of helpful components are available, like app bars, auto complete, badges, buttons, cards, dialog boxes, icons, menus, sliders and more.
-- Since we got an offer to get Premium themes,Material-UI also offers React themes and templates, so you can have a custom color theme for your app
-- It wont use too much space so our web app can run quicker than
-
-**What are the drawbacks of using this solution over alternatives?**
-
-- Hard to customize so we might end up adding Materialize for css classnames
-- We are limited to what we can customize
-- We don't have social Icons so we will have to use Font Awesome for that
+We decided to use Styled Components for styling due to it's ease of use, low learning curve and the fact that we could easily keep styles within components and also remain free from the creative constraints of using a component library.
 
 ## Back End
 
