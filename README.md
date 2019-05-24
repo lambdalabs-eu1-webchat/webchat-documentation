@@ -1,4 +1,4 @@
-# FrontDesk
+# ![FrontDesk](https://raw.githubusercontent.com/lambdalabs-eu1-webchat/webchat-frontend/master/src/frontdesklogo.png)
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ Gabe is a receptionist. He used to deal with guest queries either in-person or v
 - Receptionists have the ability to create tasks, assign them to staff members, and mark them as completed.
 - Admins can access a dashboard of metrics that indicate staff performance/shortcomings.
 - Admins are notified when dangerous/harmful keywords or negative sentiment is taking place in a conversation (https://dialogflow.com/).
-- An outline of a guests interactions with the hotel are sent via email or text (dependent on guest preferences) after their stay.
+- An outline of a guests interactions with the hotel are sent via email or text (dependent on guest preferences) after their stay (www.sendgrid.com/‎).
 - Priority hotel rooms/guest conversations are highlighted in the app for Admins and receptionists.
 - Conversations can be reassigned between Receptionists/Admins when they switch over shifts.
 - Admins/receptionists can talk to guests in English and messages will be received in the guests preferred language (https://cloud.google.com/translate/docs/).
@@ -180,7 +180,7 @@ Ability to login
 - **What internal APIs will you build to implement this feature?**
   - [POST] Login endpoint
 - **Are there third party services, APIs, or platforms will you use to implement this feature?**
-  - OAuth (excluding guests)
+  - JWT
 - **What are the costs and benefits of using the third party solution?**
   - Do not know yet. This will be updated when we start working on it.
 
@@ -306,7 +306,7 @@ via URL
 
 **Third Party**
 
-- OAuth
+- JWT
 
 **What are the costs and benefits of using the third party solution?**  
 Do not know yet. This will be updated when we start working on it.
@@ -619,9 +619,10 @@ If we store it locally we will have a lot of data to handle but if we use databa
 
 # APIs - Third Party Services
 
-OAuth
-Stripe
-Socket.io
+- Google Cloud Translate API - To dynamically translate between languages using Googles machine learning Neural Machine Translation model.
+- SendGrid - To deliver guests messages via SMTP
+- Stripe - To handle online payments for our plans
+- Socket.io - To enables real-time bidirectional communication between the server and the client
 
 # Outline and Weekly Plan
 
@@ -642,7 +643,6 @@ Socket.io
 
 - Implement all required APIs and services.
 - Connect front and back end of project.
-- Implement OAuth.
 
 ### Week Three:
 
@@ -668,14 +668,14 @@ Socket.io
 
 Use the information above to fill out the following table:
 
-| Name:                            | Web chat app                 |
-| :------------------------------- | :--------------------------- |
-| **App description:**             | Hotel service chat app.      |
-| **Front End:**                   | React and Redux              |
-| **Back End:**                    | Node, Express and Socket.io  |
-| **Database:**                    | MongoDB                      |
-| **List of APIs:**                | OAuth, Stripe, and Socket.io |
-| **List of Additional Services:** | Heroku, and Netlify          |
+| Name:                            | Web chat app                                      |
+| :------------------------------- | :------------------------------------------------ |
+| **App description:**             | Hotel service chat app.                           |
+| **Front End:**                   | React and Redux                                   |
+| **Back End:**                    | Node, Express and Socket.io                       |
+| **Database:**                    | MongoDB                                           |
+| **List of APIs:**                | Google Cloud API, SendGrid, Stripe, and Socket.io |
+| **List of Additional Services:** | Heroku, and Netlify                               |
 
 # References
 
