@@ -1,4 +1,4 @@
-# ![FrontDesk](images\fontdeskintro-noborder-crop.png)
+# ![FrontDesk](images/fontdeskintro-noborder-crop.png)
 
 ## Table of Contents
 
