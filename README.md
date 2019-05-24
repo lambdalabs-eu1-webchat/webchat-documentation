@@ -1,4 +1,4 @@
-# ![FrontDesk](https://raw.githubusercontent.com/lambdalabs-eu1-webchat/webchat-frontend/master/src/frontdesklogo.png)
+# ![FrontDesk](images\fontdeskintro-noborder-crop.png)
 
 ## Table of Contents
 
